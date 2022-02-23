@@ -80,9 +80,19 @@ app.use((err, req, res, next) => {
   });
 });
 
+/* Original code */
 // set up port
 // app.set('port', process.env.PORT || 5000);
-app.set('port', process.env.PORT || 8000); // test new port number
+// app.set('port', process.env.PORT || 8000); // test new port number
+
+/* Heroku recommended code */
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8001;
+}
+app.listen(port, () => {
+    console.log(`The application is running on localhost:${port}.`);
+});
 
 // test database connection
 (async () => {
@@ -94,7 +104,10 @@ app.set('port', process.env.PORT || 8000); // test new port number
   }
 })();
 
+/* Original code */
 // start listening on port
-const server = app.listen(app.get('port'), () => {
-  console.log(`Express server is listening on port ${server.address().port}`);
-});
+// const server = app.listen(app.get('port'), () => {
+//   console.log(`Express server is listening on port ${server.address().port}`);
+// });
+
+
