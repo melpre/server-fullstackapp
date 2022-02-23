@@ -1,3 +1,29 @@
+////////// NOTES //////////
+
+
+////////// TO-DO //////////
+
+
+
+/******************************************
+Treehouse FSJS Techdegree:
+project 9 - REST API with Express
+by Melissa Preece
+
+// Requirements for 'Exceeds Expectations' grade:
+// 1. The GET /api/users route filters out the following properties: password, createdAt, updatedAt
+      The POST /api/users route checks for and handles SequelizeUniqueConstraintError errors by returning a 400 status code and error message
+      // See files: 
+          //  middleware/async-handler.js
+          //  middleware/auth-user.js
+          //  routes/userRoutes.js
+          //  models/user.js
+// 2. The GET /api/courses and /api/courses/:id routes filter out the following properties: createdAt, updatedAt
+      The PUT /api/courses/:id and DELETE /api/courses/:id routes return a 403 status code if the current user doesn't own the requested course
+      // See file: 
+          //  routes/coursesRoutes.js
+******************************************/
+
 'use strict';
 
 // load modules
