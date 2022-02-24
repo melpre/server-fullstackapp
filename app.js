@@ -88,7 +88,7 @@ app.use((err, req, res, next) => {
 /* Heroku recommended code */
 let port = process.env.PORT;
 if (port == null || port == "") {
-  port = 5000;
+  port = 3000;
 }
 app.listen(port, () => {
     console.log(`The application is running on localhost:${port}.`);
