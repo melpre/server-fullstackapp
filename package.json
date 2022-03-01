@@ -1,12 +1,13 @@
 {
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "cross-env DB_ENABLE_LOGGING=true node './seed'"
+  },
   "name": "server-fullstackapp",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
-  "scripts": {
-    "start": "node ./app.js",
-    "seed": "cross-env DB_ENABLE_LOGGING=true node './seed'"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -23,6 +24,7 @@
     "morgan": "^1.10.0",
     "promise.prototype.finally": "^3.1.2",
     "sequelize": "^6.6.5",
-    "sqlite3": "^4.2.0"
+    "sqlite3": "^4.2.0",
+    "pg": "^8.7.3"
   }
 }
