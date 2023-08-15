@@ -5,13 +5,15 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "build": "sequelize db:migrate"
+    "build": "sequelize db:migrate",
+    "preinstall": "npx npm-force-resolutions"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.7",
+    "sequelize": "^6.31.1",
     "sequelize-cli": "^6.2.0"
   },
   "dependencies": {
@@ -23,8 +25,10 @@
     "morgan": "^1.10.0",
     "pg": "^8.7.3",
     "promise.prototype.finally": "^3.1.2",
-    "sequelize": "^6.6.5",
     "sequelize-auto-migrations-v2": "^1.2.1",
-    "sqlite3": "^4.2.0"
+    "sqlite3": "5.0.0"
+  },
+  "resolutions": {
+    "sequelize": "^6.31.1"
   }
 }

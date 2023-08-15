@@ -1,4 +1,5 @@
 ////////// NOTES //////////
+// SQLite3 version is 5.0.0, use 'npm audit' to inspect dependencies with high issues 
 
 
 ////////// TO-DO //////////
@@ -6,11 +7,10 @@
 
 
 /******************************************
-Treehouse FSJS Techdegree:
-project 9 - REST API with Express
+REST API built with Express & NodeJS
 by Melissa Preece
 
-// Requirements for 'Exceeds Expectations' grade:
+// Requirements:
 // 1. The GET /api/users route filters out the following properties: password, createdAt, updatedAt
       The POST /api/users route checks for and handles SequelizeUniqueConstraintError errors by returning a 400 status code and error message
       // See files: 
@@ -82,16 +82,16 @@ app.use((err, req, res, next) => {
 
 /* Original code */
 // set up port
-// app.set('port', process.env.PORT || 5000);
+app.set('port', process.env.PORT || 5000);
 
 /* Heroku recommended code */
-let port = process.env.PORT;
-if (port == null || port == "") {
-  port = 5000;
-}
-app.listen(port, () => {
-    console.log(`The application is running on localhost:${port}.`);
-});
+// let port = process.env.PORT;
+// if (port == null || port == "") {
+//   port = 5000;
+// }
+// app.listen(port, () => {
+//     console.log(`The application is running on localhost:${port}.`);
+// });
 
 // test database connection
 (async () => {
@@ -105,8 +105,8 @@ app.listen(port, () => {
 
 /* Original code */
 // start listening on port
-// const server = app.listen(app.get('port'), () => {
-//   console.log(`Express server is listening on port ${server.address().port}`);
-// });
+const server = app.listen(app.get('port'), () => {
+  console.log(`Express server is listening on port ${server.address().port}`);
+});
 
 
