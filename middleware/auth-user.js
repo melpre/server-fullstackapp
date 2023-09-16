@@ -1,5 +1,3 @@
-// Extra Credit -- see lines 47-55
-
 'use strict';
 
 // import npm library for basic authentication

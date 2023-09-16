@@ -1,5 +1,3 @@
-// Extra Credit -- see lines 83-104 & 106-121
-
 'use strict';
 
 const express = require('express');

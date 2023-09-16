@@ -1,5 +1,3 @@
-// Extra Credit -- see lines 35-49
-
 'use strict';
 
 const { Model, DataTypes } = require('sequelize');
