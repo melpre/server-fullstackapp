@@ -22,6 +22,5 @@
 
 ### The challenge
 
-Build a REST API using Node.js and Express to successfully connect to a MYSQL database
-Endpoint users should be able to:
+Build a REST API using Node.js and Express to successfully connect to a MYSQL databas. Endpoint users should be able to:
 - fetch data from api endpoint requests
