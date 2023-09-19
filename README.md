@@ -7,7 +7,7 @@
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  <!-- - [Screenshot](#screenshot) -->
+  - [Screenshot](#screenshot)
   <!-- - [Links](#links) -->
 <!-- - [My process](#my-process) -->
   <!-- - [Built with](#built-with) -->
@@ -20,7 +20,13 @@
 
 ## Overview
 
+
 ### The challenge
 
 Build a REST API using Node.js and Express to successfully connect to a MYSQL databas. Endpoint users should be able to:
 - fetch data from api endpoint requests
+
+### Screenshot
+
+![](./images/courses-api.png)
+
